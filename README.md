@@ -40,3 +40,73 @@
 ---
 
 ## 📁 Project Structure
+ai-task-manager/
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── utils/
+├── backend/
+│   ├── src/
+│   │   ├── tasks/
+│   │   ├── auth/
+│   │   ├── ai/
+│   │   └── users/
+└── docker-compose.yml
+---
+
+## ⚙️ Setup & Installation
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/Mohitpradhan6/ai-task-manager.git
+cd ai-task-manager
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+cd frontend && npm install
+```
+
+### 3. Environment Variables
+Create `.env` in root:
+DATABASE_URL=postgresql://user:password@localhost:5432/taskmanager
+JWT_SECRET=your_jwt_secret
+OPENAI_API_KEY=your_openai_api_key
+NODE_ENV=development
+PORT=3000
+### 4. Run the App
+```bash
+npm run dev
+```
+
+---
+
+## 🌐 API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | /api/auth/register | Register user |
+| POST | /api/auth/login | Login user |
+| GET | /api/tasks | Get all tasks |
+| POST | /api/tasks | Create task |
+| PUT | /api/tasks/:id | Update task |
+| DELETE | /api/tasks/:id | Delete task |
+| POST | /api/ai/prioritize | AI prioritization |
+| GET | /api/analytics | Productivity stats |
+
+---
+
+## 🙋 Author
+
+**Mohit Sharma**
+- 📧 mohitpradhan113@gmail.com
+- 🔗 [LinkedIn](https://linkedin.com/in/mohit-sharma-62a09b350)
+- 💻 [LeetCode](https://leetcode.com/u/mohitpradhan123/)
+- 📍 Jaipur, Rajasthan
+
+---
+
+## 📜 License
+Copyright (c) 2024 Mohit Sharma — MIT License
